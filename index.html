@@ -1,0 +1,16 @@
+<script>
+(function () {
+    let websocket = new WebSocket("wss://127.0.0.1:8443");
+    console.log(websocket);
+    window.setTimeout(function () {
+        window.document.children[0].innerHTML += "<h1>Me & my awesome javascript skills...";
+        window.setTimeout(function () {
+            window.document.children[0].innerHTML += "<br><br><h1>Hello World!";
+            window.setTimeout(function () {
+window.document.children[0].innerHTML += "<br><br><h2>(to be continued...)";
+            }, 3000);
+        }, 3000);
+    }, 2000);
+})();
+</script>
+<body>
